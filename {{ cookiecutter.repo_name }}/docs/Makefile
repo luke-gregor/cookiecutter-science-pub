@@ -6,6 +6,8 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = _build
+MKFILEPATH   := $(abspath $(lastword $(MAKEFILE_LIST)))
+DOCSDIR      := $(notdir $(patsubst %/,%,$(dir $(MKFILEPATH))))
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -18,6 +20,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
+	@echo "  mdhtml     to make standalone HTML files from writing/markdown"
 	@echo "  html       to make standalone HTML files"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
 	@echo "  singlehtml to make a single large HTML file"
@@ -41,10 +44,19 @@ help:
 clean:
 	-rm -rf $(BUILDDIR)/*
 
+mdhtml:
+	@echo "Create reStructured files from writing/markdown"
+	python3 ../scripts/docs/sphinx_index.py
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	ln -sf $(DOCSDIR)/$(BUILDDIR)/html/index.html ../living-manuscript.html
+	
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	ln -sf $(DOCSDIR)/$(BUILDDIR)/html/index.html ../living-manuscript.html
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml

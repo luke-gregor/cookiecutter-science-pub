@@ -2,8 +2,10 @@
 -e .
 
 # external requirements
+m2r
 click
 Sphinx
+sphinx_rtd_theme
 coverage
 awscli
 flake8

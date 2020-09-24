@@ -10,36 +10,44 @@ Project Organization
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
+    │   ├── analysed       <- Output of scientific ana
     │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   └── raw            <- The original, immutable data dump, can also link to server data (e.g. UPdata)
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │                         use `make mdhtml` to make a static html site from writing/markdown
+    │                         files. Use docs as a `living-manuscript` that is easy to write and read 
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    │                         `1.0-jqp-initial-data-exploration`. Use git lfs to track these
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │                         Can also be journal articles (use git lfs to store these)
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── writing            <- Generated analysis md, PDF, LaTeX, etc.
+    │   ├── manuscript     <- Can be where you store your LaTeX manuscript and can also be a 
+    │   │                     subgit directory from Overleaf. First create the document on 
+    │   │                     overleaf and then clone to ./writing. Rename the folder to whatever 
+    │   │                     you like. 
+    │   └── markdown       <- Markdown files that will be used in the creation of docs
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
+    ├── setup.py           <- makes project pip installable (pip install -e .) so scripts can be imported
+    ├── scripts            <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
     │   ├── data           <- Scripts to download or generate data
+    │   │   ├── download_data.py
     │   │   └── make_dataset.py
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
+    │   ├── docs           <- Scripts that are used to create documentation from markdown
+    │   │   └── sphinx_index.py
+    │   │
+    │   ├── analysis       <- Scripts to do your scientific analysis that is not visualization
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
@@ -54,4 +62,4 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Project based on the cookiecutter scientific-publication template (based on <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">data science project</a>) by [Luke Gregor](https://github.com/luke-gregor).</small></p>
