@@ -3,7 +3,7 @@
 _A logical, reasonably standardized, but flexible project structure for doing and sharing science toward writing a manuscript._
 
 
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+Heavily adapted from the [cookiecutter data science template]()
 
 
 ### Requirements to use the cookiecutter template:
@@ -26,7 +26,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-scientific-publication
+    cookiecutter https://github.com/luke-gregor/cookiecutter-scientific-publication
 
 
 ### The resulting directory structure
