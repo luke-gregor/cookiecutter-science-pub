@@ -2,10 +2,9 @@
 -e .
 
 # external requirements
-m2r
-click
-Sphinx
-sphinx_rtd_theme
+mkdocs
+mkdocs-material
+mkdocs-bibtex
 coverage
 awscli
 flake8

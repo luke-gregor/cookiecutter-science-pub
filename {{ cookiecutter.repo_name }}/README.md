@@ -15,23 +15,22 @@ Project Organization
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump, can also link to server data (e.g. UPdata)
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │                         use `make mdhtml` to make a static html site from writing/markdown
-    │                         files. Use docs as a `living-manuscript` that is easy to write and read 
+    ├── docs               <- A default `mkdocs` project; see `writing/markdown/README.md` for details.
+    │                         Only contains the `mkdocs.yml` file. Serve the website with `mkdocs serve` 
+    │                         from the `docs` folder. 
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`. Use git lfs to track these
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │                         Can also be journal articles (use git lfs to store these)
     │
     ├── writing            <- Generated analysis md, PDF, LaTeX, etc.
     │   ├── manuscript     <- Can be where you store your LaTeX manuscript and can also be a 
     │   │                     subgit directory from Overleaf. First create the document on 
     │   │                     overleaf and then clone to ./writing. Rename the folder to whatever 
     │   │                     you like. 
-    │   └── markdown       <- Markdown files that will be used in the creation of docs
+    │   ├── markdown       <- Markdown files that will be used in the creation of docs. Website 
+    │   │                     will be built with the folder structure intact. 
+    │   └── manuscript     <- Can be where you store your LaTeX manuscript and can also be a
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
