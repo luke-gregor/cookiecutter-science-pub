@@ -1,9 +1,9 @@
-# Cookiecutter Data Science
+# Cookiecutter Science Pub
 
 _A logical, reasonably standardized, but flexible project structure for doing and sharing science toward writing a manuscript._
 
 
-Heavily adapted from the [cookiecutter data science template]()
+Heavily adapted from the [cookiecutter data science template](). 
 
 
 ### Requirements to use the cookiecutter template:
@@ -26,7 +26,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/luke-gregor/cookiecutter-scientific-publication
+    cookiecutter https://github.com/luke-gregor/cookiecutter-science-pub
 
 
 ### The resulting directory structure
