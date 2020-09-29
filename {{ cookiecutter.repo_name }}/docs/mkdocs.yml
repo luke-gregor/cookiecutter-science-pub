@@ -1,0 +1,26 @@
+site_name: {{cookiecutter.project_name}}
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.instant
+  palette:
+    scheme: default
+    primary: black
+    accent: blue
+  icon:
+    logo: fontawesome/solid/globe-africa
+
+markdown_extensions:
+  - footnotes
+
+docs_dir: "../writing/markdown"
+use_directory_urls: false
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: "../writing/referencing/library.bib"
+      csl_file: "../writing/referencing/copernicus.csl"
+      cite_style: "pandoc"
