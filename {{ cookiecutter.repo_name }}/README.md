@@ -1,10 +1,13 @@
-{{cookiecutter.project_name}}
-==============================
+# {{cookiecutter.project_name}}
 
 {{cookiecutter.description}}
 
-Project Organization
-------------
+## Basic usage
+- type `make website` in the base dir to launch the project website
+- edit project website in `docs` using markdown
+- git clone your Overleaf repo to `latex`
+
+## Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
@@ -15,22 +18,14 @@ Project Organization
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump, can also link to server data (e.g. UPdata)
     │
-    ├── docs               <- A default `mkdocs` project; see `writing/markdown/README.md` for details.
-    │                         Only contains the `mkdocs.yml` file. Serve the website with `mkdocs serve` 
-    │                         from the `docs` folder. 
+    ├── docs               <- A default `mkdocs` project; see `docs/living-docs.md` for details.
+    │                         The mkdocs config is in `_/mkdocs/mkdocs.yml` file. 
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`. Use git lfs to track these
     │
-    ├── writing            <- Generated analysis md, PDF, LaTeX, etc.
-    │   ├── manuscript     <- Can be where you store your LaTeX manuscript and can also be a 
-    │   │                     subgit directory from Overleaf. First create the document on 
-    │   │                     overleaf and then clone to ./writing. Rename the folder to whatever 
-    │   │                     you like. 
-    │   ├── markdown       <- Markdown files that will be used in the creation of docs. Website 
-    │   │                     will be built with the folder structure intact. 
-    │   └── manuscript     <- Can be where you store your LaTeX manuscript and can also be a
+    ├── latex              <- Generated analysis md, PDF, LaTeX, etc. Clone your Overleaf Git here
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
@@ -42,9 +37,6 @@ Project Organization
     │   ├── data           <- Scripts to download or generate data
     │   │   ├── download_data.py
     │   │   └── make_dataset.py
-    │   │
-    │   ├── docs           <- Scripts that are used to create documentation from markdown
-    │   │   └── sphinx_index.py
     │   │
     │   ├── analysis       <- Scripts to do your scientific analysis that is not visualization
     │   │

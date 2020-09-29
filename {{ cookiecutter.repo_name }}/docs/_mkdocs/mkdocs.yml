@@ -15,12 +15,12 @@ theme:
 markdown_extensions:
   - footnotes
 
-docs_dir: "../writing/markdown"
+docs_dir: "../"
 use_directory_urls: false
 
 plugins:
   - search
   - bibtex:
-      bib_file: "../writing/referencing/library.bib"
-      csl_file: "../writing/referencing/copernicus.csl"
+      bib_file: "../../latex/library.bib"
+      csl_file: "../../latex/copernicus.csl"
       cite_style: "pandoc"

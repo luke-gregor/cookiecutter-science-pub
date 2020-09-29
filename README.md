@@ -45,9 +45,7 @@ The directory structure of your new project looks like this:
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump, can also link to server data (e.g. UPdata)
 │
-├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-│                         use `make mdhtml` to make a static html site from writing/markdown
-│                         files. Use docs as a `living-manuscript` that is easy to write and read 
+├── docs               <- A default `mkdocs` project; see `writing/markdown/README.md` for details
 │
 ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
 │                         the creator's initials, and a short `-` delimited description, e.g.

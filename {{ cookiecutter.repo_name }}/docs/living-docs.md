@@ -1,5 +1,5 @@
 ---
-bibliography: [../referencing/library.bib]
+bibliography: [../latex/library.bib]
 ---
 
 # The living docs

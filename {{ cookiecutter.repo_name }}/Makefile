@@ -25,6 +25,15 @@ requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
+## run the website and launch the browser
+website: start_browser
+	@echo The website will launch in 5 seconds - the docs might not be built by then, refresh the page if thats the case
+	mkdocs serve -f docs/_mkdocs/mkdocs.yml
+
+.SILENT:
+start_browser:
+	(sleep 5 && open http://localhost:8000) & 
+
 ## Make Dataset
 data: requirements
 	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
