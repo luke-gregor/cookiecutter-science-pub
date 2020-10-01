@@ -5,6 +5,7 @@
 mkdocs
 mkdocs-material
 mkdocs-bibtex
+python-markdown-math
 coverage
 awscli
 flake8
