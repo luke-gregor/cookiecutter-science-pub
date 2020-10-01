@@ -3,7 +3,7 @@
 _A logical, reasonably standardized, but flexible project structure for doing and sharing science toward writing a manuscript._
 
 
-Heavily adapted from the [cookiecutter data science template](). 
+Heavily adapted from the [cookiecutter data science template](https://github.com/drivendata/cookiecutter-data-science). 
 
 
 ### Requirements to use the cookiecutter template:
@@ -45,7 +45,7 @@ The directory structure of your new project looks like this:
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump, can also link to server data (e.g. UPdata)
 │
-├── docs               <- A default `mkdocs` project; see `writing/markdown/README.md` for details
+├── docs               <- A default `mkdocs` project; run `make website` from the base dir for more info
 │
 ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
 │                         the creator's initials, and a short `-` delimited description, e.g.
