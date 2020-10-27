@@ -14,18 +14,13 @@ theme:
 
 markdown_extensions:
   - footnotes
-  - mdx_math:
-       enable_dollar_delimiter: True
 
-extra_javascript: 
-    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-
-docs_dir: "../"
+docs_dir: "docs"
 use_directory_urls: false
 
 plugins:
   - search
   - bibtex:
-      bib_file: "../../latex/library.bib"
-      csl_file: "../../latex/copernicus.csl"
+      bib_file: "latex/library.bib"
+      csl_file: "latex/copernicus.csl"
       cite_style: "pandoc"

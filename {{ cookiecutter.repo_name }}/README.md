@@ -19,7 +19,7 @@
     │   └── raw            <- The original, immutable data dump, can also link to server data (e.g. UPdata)
     │
     ├── docs               <- A default `mkdocs` project; see `docs/living-docs.md` for details.
-    │                         The mkdocs config is in `_/mkdocs/mkdocs.yml` file. 
+    │                         The mkdocs config is in `mkdocs.yml` file. 
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
