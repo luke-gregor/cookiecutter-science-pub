@@ -30,6 +30,6 @@ MkDocs also supports bibtex citations using the [mkdocs-bibtex](https://pypi.org
 I also recommend that you use an extension in your text editor or whatever you decide to use that will create prompts for the references in your `library.bib` file. Here's a link to the VS Code extension for [Pandoc Citer](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter).
 
 
-`[@Key]` can be used to create citations as footnotes[@Example].
+`[@Key]` can be used to create citations as footnotes[@Example2000].
 
 \bibliography
